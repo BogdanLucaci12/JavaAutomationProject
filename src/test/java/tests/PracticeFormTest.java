@@ -77,6 +77,7 @@ public class PracticeFormTest {
         WebElement phoneElement=driver.findElement(By.id("userNumber"));
         String phoneValue="0744771452";
         elementMethods.sendKeys(phoneValue, phoneElement);
+        pageMethods.scrollPage(0, 350);
 
         WebElement dateOfBirthElement=driver.findElement(By.id("dateOfBirthInput"));
         elementMethods.clickElement(dateOfBirthElement);
@@ -86,6 +87,14 @@ public class PracticeFormTest {
         WebElement yearOfBirthElement=driver.findElement(By.className("react-datepicker__year-select"));
         Select yearSelect=new Select(yearOfBirthElement);
         yearSelect.selectByValue("2020");
+
+        List<WebElement> daysOfBirthElement=driver.findElements(By.className("react-datepicker__month"));
+        String dayOfBirthValue="5";
+        for (Integer i=0; i< daysOfBirthElement.size(); i++){
+            if (daysOfBirthElement.get(i).getText().equals(dayOfBirthValue)){
+                elementMethods.clickElement(daysOfBirthElement.get(i));
+            }
+        }
 
         WebElement subjectElement=driver.findElement(By.id("subjectsInput"));
         String subjectValue="Arts";
