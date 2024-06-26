@@ -31,5 +31,15 @@ public class ElementMethods {
         element.sendKeys(s);
         element.sendKeys(Keys.ENTER);
     }
+    public  void switchFrame(  String s){
+        driver.switchTo().frame(s);
+
+    }
+    public void switchFrameWebElement(WebElement e){
+        driver.switchTo().frame(e);
+    }
+    public  void  defaultFrame(){
+        driver.switchTo().defaultContent();
+    }
 
 }
