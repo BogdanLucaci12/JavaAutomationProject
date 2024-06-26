@@ -50,7 +50,7 @@ public class FrameTest {
         WebElement childFrame=driver.findElement(By.xpath("//iframe[@srcdoc='<p>Child Iframe</p>']"));
         elementMethods.switchFrameWebElement(childFrame);
         WebElement text=driver.findElement(By.xpath("//p"));
-        System.out.println(text.getText());
+//        System.out.println(text.getText());
     }
     }
 
