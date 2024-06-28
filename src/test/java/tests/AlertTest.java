@@ -32,7 +32,7 @@ public class AlertTest {
         ElementMethods elementMethods=new ElementMethods(driver);
 
         pageMethods.scrollPage(0, 350);
-        WebElement alertFrameWindowsMenu=driver.findElement(By.xpath("//div[@class=\"card mt-4 top-card\"]/div/div/h5[contains(text(), \"Alerts, Frame & Windows\")]"));
+        WebElement alertFrameWindowsMenu=driver.findElement(By.xpath("//h5[text()= \"Alerts, Frame & Windows\"]"));
         elementMethods.clickElement(alertFrameWindowsMenu);
 
         WebElement alertMenu=driver.findElement(By.xpath("//div[@class='element-list collapse show']/ul/li/span[contains(text(), \"Alerts\")]"));
@@ -55,8 +55,6 @@ public class AlertTest {
         WebElement timerAlertElement=driver.findElement(By.id("timerAlertButton"));
         elementMethods.clickElement(timerAlertElement);
         alertsMethods.acceptAlert();
-
-
     }
 
 }
