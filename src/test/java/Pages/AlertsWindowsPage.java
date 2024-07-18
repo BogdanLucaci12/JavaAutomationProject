@@ -1,20 +1,32 @@
 package Pages;
 
-import helperMethods.ElementMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AlertsWindows {
-    public WebDriver driver;
-    public ElementMethods elementMethods;
-    public AlertsWindows(WebDriver driver) {
-        this.driver = driver;
-        elementMethods=new ElementMethods(driver);
+public class AlertsWindowsPage extends BasePage {
+    public AlertsWindowsPage(WebDriver driver) {
+        super(driver);
     }
     @FindBy(xpath = "//span[text()='Browser Windows']")
-    public WebElement browserWindows;
+    private WebElement browserWindows;
+
+    @FindBy(xpath = "//span[text()='Frames']")
+    private WebElement alertFrame;
+
+    @FindBy(xpath = "//span[text()='Alerts']")
+    private WebElement alertMenu;
+
+
+
+
     public void navigateToBrowserWindows(){
         elementMethods.clickElement(browserWindows);
+    }
+    public void navigateToFramesPage(){
+        elementMethods.clickElement(alertFrame);
+    }
+    public void navigateToAlertsPage(){
+        elementMethods.clickElement(alertMenu);
     }
 }

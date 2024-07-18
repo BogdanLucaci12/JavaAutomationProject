@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -33,7 +34,6 @@ public class ElementMethods {
     }
     public  void switchFrame(  String s){
         driver.switchTo().frame(s);
-
     }
     public void switchFrameWebElement(WebElement e){
         driver.switchTo().frame(e);
@@ -42,4 +42,12 @@ public class ElementMethods {
         driver.switchTo().defaultContent();
     }
 
+    public void selectByTextElement(WebElement monthOfBirthElement, String month){
+        Select monthSelect=new Select(monthOfBirthElement);
+        monthSelect.selectByVisibleText(month);
+    }
+    public void selectByValue(WebElement yearOfBirthElement, String year){
+        Select monthSelect=new Select(yearOfBirthElement);
+        monthSelect.selectByVisibleText(year);
+    }
 }
