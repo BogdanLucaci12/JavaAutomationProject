@@ -1,0 +1,14 @@
+{
+  "firstNameValue": "Bogdan",
+  "lastNameValue": "Lucaci",
+  "userEmailValue": "bogdan@gmail.com",
+  "genderValue": "Female",
+  "phoneValue": "0744771452",
+  "dateOfBirthDaysValue": "23",
+  "subjectValue": "Arts",
+  "textareaValue": "Buna hei ce faci",
+  "stateInputValue": "NCR",
+  "cityInputValue": "Delhi",
+  "file": "2024-04-27 (5).png",
+  "hobbiesValues": ["Sports", "Reading", "Music"]
+}
