@@ -132,6 +132,8 @@ public class PracticeFormPage extends BasePage{
   public void validateEntireForm(PracticeFormObject testData){
       pageMethods.scrollPage(0, 350);
       Assert.assertEquals(tableElement.get(0).getText(), "Student Name "+ testData.getFirstNameValue() + " " +testData.getLastNameValue());
+      LoggerUtility.info("Assert for " + tableElement.get(0).getText());
+      LoggerUtility.info("Student Name "+ testData.getFirstNameValue() + " " +testData.getLastNameValue());
       Assert.assertEquals(tableElement.get(1).getText(), "Student Email " + testData.getUserEmailValue() );
       Assert.assertEquals(tableElement.get(2).getText(), "Gender " + testData.getGenderValue() );
       Assert.assertEquals(tableElement.get(3).getText(), "Mobile " + testData.getPhoneValue() );
