@@ -1,5 +1,6 @@
 package helperMethods;
 
+import lombok.AllArgsConstructor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,12 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+@AllArgsConstructor
 public class ElementMethods {
     public WebDriver driver;
 
-    public ElementMethods (WebDriver driver){
-        this.driver=driver;
-    }
     //metoda generala pt interactiunea cu elemente
     public void waitForElementVisible(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
