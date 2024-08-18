@@ -30,7 +30,7 @@ public class SharedData {
         if(!result.isSuccess()){
             LoggerUtility.error(result.getThrowable().getMessage());
         }
-        LoggerUtility.info("The broswer is close with succes");
+        LoggerUtility.info("The browser is close with succes");
         driver.quit();
     }
 
