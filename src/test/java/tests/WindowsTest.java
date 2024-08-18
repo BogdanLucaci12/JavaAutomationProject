@@ -1,10 +1,8 @@
 package tests;
 
-import Pages.AlertsWindowsPage;
-import Pages.HomePage;
-import Pages.WindowsPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import pages.AlertsWindowsPage;
+import pages.HomePage;
+import pages.WindowsPage;
 import org.testng.annotations.Test;
 import shareData.SharedData;
 

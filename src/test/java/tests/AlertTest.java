@@ -1,8 +1,8 @@
 package tests;
 
-import Pages.AlertsPage;
-import Pages.AlertsWindowsPage;
-import Pages.HomePage;
+import pages.AlertsPage;
+import pages.AlertsWindowsPage;
+import pages.HomePage;
 import org.testng.annotations.Test;
 import shareData.SharedData;
 

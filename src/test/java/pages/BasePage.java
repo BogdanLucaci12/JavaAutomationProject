@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import helperMethods.AlertsMethods;
 import helperMethods.ElementMethods;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 
-    public WebDriver driver;
+    protected WebDriver driver;
     protected ElementMethods elementMethods;
     protected PageMethods pageMethods;
     protected AlertsMethods alertsMethods;

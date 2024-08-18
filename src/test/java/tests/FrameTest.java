@@ -1,9 +1,9 @@
 package tests;
 
-import Pages.AlertsWindowsPage;
-import Pages.FramePage;
-import Pages.HomePage;
-import Pages.NestedPageFrame;
+import pages.AlertsWindowsPage;
+import pages.FramePage;
+import pages.HomePage;
+import pages.NestedPageFrame;
 import helperMethods.PageMethods;
 import org.testng.annotations.Test;
 import shareData.SharedData;
