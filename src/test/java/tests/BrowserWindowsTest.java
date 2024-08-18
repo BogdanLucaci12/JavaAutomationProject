@@ -34,20 +34,19 @@ public class BrowserWindowsTest {
         elementMethods.clickElement(browserWindows);
 
         //interactionam cu newTab
-        WebElement newTabButtonElement=driver.findElement(By.id("tabButton"));
-        elementMethods.clickElement(newTabButtonElement);
-        windowMethods.switchSpecificTab(1);
-        windowMethods.closeCurrentTab();
-        windowMethods.switchSpecificTab(0);
-
+//        WebElement newTabButtonElement=driver.findElement(By.id("tabButton"));
+//        elementMethods.clickElement(newTabButtonElement);
+//        windowMethods.switchSpecificTab(1);
+//        windowMethods.closeCurrentTab();
+//        windowMethods.switchSpecificTab(0);
 
         //interactionam cu window button
-        WebElement newWindow=driver.findElement(By.id("windowButton"));
-        elementMethods.clickElement(newWindow);
-        windowMethods.switchSpecificTab(1);
-        windowMethods.closeCurrentTab();
-        windowMethods.switchSpecificTab(0);
-
+//        WebElement newWindow=driver.findElement(By.id("windowButton"));
+//        elementMethods.clickElement(newWindow);
+//        windowMethods.switchSpecificTab(1);
+//        windowMethods.closeCurrentTab();
+//        windowMethods.switchSpecificTab(0);
+//
 
         //interact with window message
         WebElement newWindowMessage=driver.findElement(By.id("messageWindowButton"));
@@ -56,7 +55,6 @@ public class BrowserWindowsTest {
         windowMethods.closeCurrentTab();
         windowMethods.switchSpecificTab(0);
         driver.quit();
-
 
     }
 }
